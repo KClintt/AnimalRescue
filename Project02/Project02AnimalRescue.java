@@ -110,9 +110,17 @@ public class Project02AnimalRescue
 		private String species;
 		private double weight;
 		private double dailyFoodAmount;
-	}
+	
 
+public Animal(String name, String species, double weight, double dailyFoodAmount)
+{
+    this.name = name;
+    this.species = species;
+    this.weight = weight;
+    this.dailyFoodAmount = dailyFoodAmount;
 }
+	
+	}
 
 //================= RESCUE CENTER CLASS =================
 //After independently implementing and testing each RescueCenter
