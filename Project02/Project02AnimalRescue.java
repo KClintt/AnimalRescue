@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 /*
@@ -99,6 +98,7 @@ public class Project02AnimalRescue
 		System.out.println("Calculates average daily and total weekly food");
 		System.out.println("Writes rescue information and analysis to a file");
 	}
+	// end of main
 }
 
 //================= ANIMAL CLASS =================
