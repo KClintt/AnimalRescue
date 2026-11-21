@@ -104,6 +104,17 @@ public class Project02AnimalRescue
 //================= ANIMAL CLASS =================
 //After independently implementing and testing the Animal class,
 //add your completed Animal class below.
+/**
+ * Represents an animal in the rescue center. Stores information about the
+ * animal.
+ */
+class Animal
+{
+	private String name;
+	private String species;
+	private double weight;
+	private double dailyFoodAmount;
+}
 
 //================= RESCUE CENTER CLASS =================
 //After independently implementing and testing each RescueCenter
