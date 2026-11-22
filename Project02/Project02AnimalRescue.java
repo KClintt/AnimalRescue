@@ -174,6 +174,18 @@ class Animal
 		return species;
 	}
 
+	/**
+	 * Calculates the amount of food needed for one week.
+	 *
+	 * @return Weekly food amount in cups
+	 */
+	public double calculateWeeklyFood()
+	{
+		double weeklyFood = dailyFoodAmount * 7;
+
+		return weeklyFood;
+	}
+
 }
 
 //================= RESCUE CENTER CLASS =================
