@@ -111,6 +111,14 @@ public class Project02AnimalRescue
 		private double weight;
 		private double dailyFoodAmount;
 
+		/**
+		 * Creates an animal with its basic information.
+		 *
+		 * @param name            Animal name
+		 * @param species         Animal species
+		 * @param weight          Weight in pounds
+		 * @param dailyFoodAmount Daily food in cups
+		 */
 		public Animal(String name, String species, double weight, double dailyFoodAmount)
 		{
 			this.name = name;
