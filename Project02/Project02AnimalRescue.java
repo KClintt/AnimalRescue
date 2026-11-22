@@ -13,6 +13,7 @@ public class Project02AnimalRescue
 		System.out.println(animal1.getSpecies());
 		System.out.println(animal1.getWeight());
 		System.out.println(animal1.getDailyFoodAmount());
+		System.out.println(animal1.calculateWeeklyFood());
 //		displayProgramSummary();
 //
 //		// ===== TEST 1 =====
