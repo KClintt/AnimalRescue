@@ -127,6 +127,46 @@ public class Project02AnimalRescue
 			this.dailyFoodAmount = dailyFoodAmount;
 		}
 
+		/**
+		 * Gets the animal's name.
+		 *
+		 * @return The animal's name
+		 */
+		public String getName()
+		{
+			return name;
+		}
+
+		/**
+		 * Gets the animal's daily food amount.
+		 *
+		 * @return Daily food amount in cups
+		 */
+		public double getDailyFoodAmount()
+		{
+			return dailyFoodAmount;
+		}
+
+		/**
+		 * Gets the animal's weight.
+		 *
+		 * @return Weight in pounds
+		 */
+		public double getWeight()
+		{
+			return weight;
+		}
+
+		/**
+		 * Gets the animal's species.
+		 *
+		 * @return The animal's species
+		 */
+		public String getSpecies()
+		{
+			return species;
+		}
+
 	}
 
 }
