@@ -7,6 +7,12 @@ public class Project02AnimalRescue
 {
 	public static void main(String[] args)
 	{
+		Animal animal1 = new Animal("Luna", "Dog", 20.0, 1.50);
+
+		System.out.println(animal1.getName());
+		System.out.println(animal1.getSpecies());
+		System.out.println(animal1.getWeight());
+		System.out.println(animal1.getDailyFoodAmount());
 //		displayProgramSummary();
 //
 //		// ===== TEST 1 =====
@@ -96,77 +102,76 @@ public class Project02AnimalRescue
 //	}
 //	// end of main
 	}
+}
 
 //================= ANIMAL CLASS =================
 //After independently implementing and testing the Animal class,
 //add your completed Animal class below.
+/**
+ * Represents an animal in the rescue center. Stores information about the
+ * animal.
+ */
+class Animal
+{
+	private String name;
+	private String species;
+	private double weight;
+	private double dailyFoodAmount;
+
 	/**
-	 * Represents an animal in the rescue center. Stores information about the
-	 * animal.
+	 * Creates an animal with its basic information.
+	 *
+	 * @param name            Animal name
+	 * @param species         Animal species
+	 * @param weight          Weight in pounds
+	 * @param dailyFoodAmount Daily food in cups
 	 */
-	class Animal
+	public Animal(String name, String species, double weight, double dailyFoodAmount)
 	{
-		private String name;
-		private String species;
-		private double weight;
-		private double dailyFoodAmount;
+		this.name = name;
+		this.species = species;
+		this.weight = weight;
+		this.dailyFoodAmount = dailyFoodAmount;
+	}
 
-		/**
-		 * Creates an animal with its basic information.
-		 *
-		 * @param name            Animal name
-		 * @param species         Animal species
-		 * @param weight          Weight in pounds
-		 * @param dailyFoodAmount Daily food in cups
-		 */
-		public Animal(String name, String species, double weight, double dailyFoodAmount)
-		{
-			this.name = name;
-			this.species = species;
-			this.weight = weight;
-			this.dailyFoodAmount = dailyFoodAmount;
-		}
+	/**
+	 * Gets the animal's name.
+	 *
+	 * @return The animal's name
+	 */
+	public String getName()
+	{
+		return name;
+	}
 
-		/**
-		 * Gets the animal's name.
-		 *
-		 * @return The animal's name
-		 */
-		public String getName()
-		{
-			return name;
-		}
+	/**
+	 * Gets the animal's daily food amount.
+	 *
+	 * @return Daily food amount in cups
+	 */
+	public double getDailyFoodAmount()
+	{
+		return dailyFoodAmount;
+	}
 
-		/**
-		 * Gets the animal's daily food amount.
-		 *
-		 * @return Daily food amount in cups
-		 */
-		public double getDailyFoodAmount()
-		{
-			return dailyFoodAmount;
-		}
+	/**
+	 * Gets the animal's weight.
+	 *
+	 * @return Weight in pounds
+	 */
+	public double getWeight()
+	{
+		return weight;
+	}
 
-		/**
-		 * Gets the animal's weight.
-		 *
-		 * @return Weight in pounds
-		 */
-		public double getWeight()
-		{
-			return weight;
-		}
-
-		/**
-		 * Gets the animal's species.
-		 *
-		 * @return The animal's species
-		 */
-		public String getSpecies()
-		{
-			return species;
-		}
-
+	/**
+	 * Gets the animal's species.
+	 *
+	 * @return The animal's species
+	 */
+	public String getSpecies()
+	{
+		return species;
 	}
 
 }
