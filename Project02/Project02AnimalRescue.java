@@ -1,5 +1,5 @@
 /*
- * Name: [Your Name]
+ * Name: Clinton Kessey
  * Class: CS1050
  * Description: Animal Rescue Center Analysis - Iteration 02
  */
@@ -185,6 +185,28 @@ class Animal
 		double weeklyFood = dailyFoodAmount * 7;
 
 		return weeklyFood;
+	}
+
+	/**
+	 * Determines the animal's weight category.
+	 *
+	 * @return The weight category of the animal
+	 */
+	public String determineWeightCategory()
+	{
+		if (weight < 20)
+		{
+			return "Small";
+		} else if (weight < 50)
+		{
+			return "Medium";
+		} else if (weight < 100)
+		{
+			return "Large";
+		} else
+		{
+			return "Extra Large";
+		}
 	}
 
 }
