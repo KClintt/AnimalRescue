@@ -229,4 +229,17 @@ class RescueCenter
 	private String rescueName;
 	private Animal[] animals;
 	private int animalCount;
+
+	/**
+	 * Creates a rescue center with a specified capacity.
+	 *
+	 * @param rescueName Name of the rescue center
+	 * @param maxAnimals Maximum number of animals
+	 */
+	public RescueCenter(String rescueName, int maxAnimals)
+	{
+		this.rescueName = rescueName;
+		animals = new Animal[maxAnimals];
+		animalCount = 0;
+	}
 }
