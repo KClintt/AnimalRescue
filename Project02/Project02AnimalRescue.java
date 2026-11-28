@@ -337,4 +337,24 @@ class RescueCenter
 		return totalDailyFood / animalCount;
 	}
 
+	/**
+	 * Displays animals that eat at or above the average daily food amount.
+	 *
+	 * @param average Average daily food amount
+	 */
+	public void displayAnimalsAtOrAboveAverageDailyFood(double average)
+	{
+		System.out.println("Animals At or Above Average Daily Food:");
+
+		for (int i = 0; i < animalCount; i++)
+		{
+			double dailyFood = animals[i].getDailyFoodAmount();
+
+			if (dailyFood >= average)
+			{
+				animals[i].displayAnimalAnalysis();
+			}
+		}
+	}
+
 }
