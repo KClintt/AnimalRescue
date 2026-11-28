@@ -216,7 +216,11 @@ class Animal
 	{
 		System.out.println("Name: " + name);
 		System.out.println("Species: " + species);
-
+		System.out.printf("Weight: %.2f lbs%n", weight);
+		System.out.println("Weight Category: " + determineWeightCategory());
+		System.out.printf("Daily Food: %.2f cups%n", dailyFoodAmount);
+		System.out.printf("Weekly Food: %.2f cups%n", calculateWeeklyFood());
+		System.out.println();
 	}
 }
 
