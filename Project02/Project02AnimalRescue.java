@@ -224,5 +224,9 @@ class Animal
 }
 
 //================= RESCUE CENTER CLASS =================
-//After independently implementing and testing each RescueCenter
-//method, add your completed RescueCenter class below.
+class RescueCenter
+{
+	private String rescueName;
+	private Animal[] animals;
+	private int animalCount;
+}
