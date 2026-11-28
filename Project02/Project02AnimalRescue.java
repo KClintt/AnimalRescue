@@ -9,11 +9,10 @@ public class Project02AnimalRescue
 	{
 		Animal animal1 = new Animal("Luna", "Dog", 20.0, 1.50);
 
-		System.out.println(animal1.getName());
-		System.out.println(animal1.getSpecies());
-		System.out.println(animal1.getWeight());
-		System.out.println(animal1.getDailyFoodAmount());
-		System.out.println(animal1.calculateWeeklyFood());
+		Animal animal2 = new Animal("Rex", "Dog", 100.0, 3.00);
+
+		animal1.displayAnimalAnalysis();
+		animal2.displayAnimalAnalysis();
 //		displayProgramSummary();
 //
 //		// ===== TEST 1 =====
