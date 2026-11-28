@@ -209,6 +209,15 @@ class Animal
 		}
 	}
 
+	/**
+	 * Displays the animal's information and food analysis.
+	 */
+	public void displayAnimalAnalysis()
+	{
+		System.out.println("Name: " + name);
+		System.out.println("Species: " + species);
+
+	}
 }
 
 //================= RESCUE CENTER CLASS =================
