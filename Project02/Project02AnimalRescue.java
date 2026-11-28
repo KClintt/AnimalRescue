@@ -242,4 +242,25 @@ class RescueCenter
 		animals = new Animal[maxAnimals];
 		animalCount = 0;
 	}
+
+	/**
+	 * Gets the name of the rescue center.
+	 *
+	 * @return Name of the rescue center
+	 */
+	public String getRescueName()
+	{
+		return rescueName;
+	}
+
+	/**
+	 * Gets the current number of animals.
+	 *
+	 * @return Number of animals in the rescue center
+	 */
+	public int getAnimalCount()
+	{
+		return animalCount;
+	}
+
 }
