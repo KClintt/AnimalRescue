@@ -296,4 +296,21 @@ class RescueCenter
 		}
 	}
 
+	/**
+	 * Calculates the total weekly food needed for all animals.
+	 *
+	 * @return Total weekly food amount in cups
+	 */
+	public double calculateTotalWeeklyFood()
+	{
+		double totalWeeklyFood = 0;
+
+		for (int i = 0; i < animalCount; i++)
+		{
+			totalWeeklyFood += animals[i].calculateWeeklyFood();
+		}
+
+		return totalWeeklyFood;
+	}
+
 }
