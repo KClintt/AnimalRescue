@@ -280,4 +280,20 @@ class RescueCenter
 		}
 	}
 
+	/**
+	 * Displays the rescue center and all stored animal results.
+	 */
+	public void displayAnimalResults()
+	{
+		System.out.println("Rescue Center: " + rescueName);
+		System.out.println("Maximum Capacity: " + animals.length);
+		System.out.println("Current Animal Count: " + animalCount);
+		System.out.println();
+
+		for (int i = 0; i < animalCount; i++)
+		{
+			animals[i].displayAnimalAnalysis();
+		}
+	}
+
 }
