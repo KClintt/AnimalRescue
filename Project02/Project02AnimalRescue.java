@@ -263,4 +263,21 @@ class RescueCenter
 		return animalCount;
 	}
 
+	/**
+	 * Adds an animal if the rescue center has available space.
+	 *
+	 * @param animal The animal to add
+	 */
+	public void addAnimal(Animal animal)
+	{
+		if (animalCount < animals.length)
+		{
+			animals[animalCount] = animal;
+			animalCount++;
+		} else
+		{
+			System.out.println("Rescue center is full. Cannot add " + animal.getName());
+		}
+	}
+
 }
