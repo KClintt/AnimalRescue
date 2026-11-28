@@ -296,4 +296,27 @@ class RescueCenter
 		}
 	}
 
+	/**
+	 * Calculates the average daily food amount per animal.
+	 *
+	 * @return Average daily food amount in cups
+	 */
+	public double calculateAverageDailyFood()
+	{
+		double totalDailyFood = 0;
+
+		if (animalCount == 0)
+		{
+			return 0;
+		}
+
+		for (int i = 0; i < animalCount; i++)
+		{
+			double dailyFood = animals[i].getDailyFoodAmount();
+			totalDailyFood = totalDailyFood + dailyFood;
+		}
+
+		return totalDailyFood / animalCount;
+	}
+
 }
